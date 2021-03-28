@@ -12,7 +12,7 @@ do
                 exit 0
         fi
         tries=$((tries+1))
-        sleep 10
+        sleep 5
         echo $DATE tries: $tries >>/etc/config/my_watchdog.log
 done
  
