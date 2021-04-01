@@ -122,12 +122,12 @@ config global
 	option loglevel 'warning'
 	option trojan_loglevel '2'
 	option socks_enabled '1'
-	option enabled '1'
 	option tcp_node '3eb66dc6a1e049d0a330fb4dbada018e'
 	option tcp_proxy_mode 'gfwlist'
 	option udp_proxy_mode 'gfwlist'
 	option localhost_tcp_proxy_mode 'gfwlist'
 	option localhost_udp_proxy_mode 'gfwlist'
+	option enabled '0'
 
 config global_haproxy
 	option balancing_enable '0'
