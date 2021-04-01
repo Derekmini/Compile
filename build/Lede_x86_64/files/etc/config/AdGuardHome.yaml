@@ -3,7 +3,7 @@ bind_port: 3000
 beta_bind_port: 0
 users:
 - name: admin
-  password: $2a$10$dFyZisurmGYoyjCeRRoAuOWESCgqnEc3iPVWMeqsmjNuxQ4W6jCv6
+  password: $2y$10$aGq/mKXC7A9d8oGNpEShaOay7c.rR6OHGWOiOjECnIG.1Z2UtZ6Bq
 http_proxy: ""
 language: ""
 rlimit_nofile: 0
