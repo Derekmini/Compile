@@ -13,10 +13,10 @@ config global
 	option chnroute_url 'https://ispip.clang.cn/all_cn.txt'
 	option nfip_url 'https://raw.sevencdn.com/QiuSimons/Netflix_IP/master/NF_only.txt'
 	option adblock_url 'https://anti-ad.net/anti-ad-for-dnsmasq.conf'
-	option global_server 'cfg064a8f'
 	option netflix_server 'cfg324a8f'
 	option netflix_proxy '1'
 	option run_mode 'router'
+	option global_server 'nil'
 
 config server_subscribe
 	option auto_update_time '2'
