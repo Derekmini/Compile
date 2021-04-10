@@ -13,7 +13,7 @@ config global
 	option dports '1'
 	option v2ray_flow '0'
 	option threads '0'
-	option global_server 'cfg614a8f'
+	option global_server 'nil'
 
 config socks5_proxy
 	option enable_server '0'
