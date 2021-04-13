@@ -5,18 +5,15 @@ config global
 	option pdnsd_enable '1'
 	option tunnel_forward '8.8.4.4:53'
 	option monitor_enable '1'
-	option enable_switch '1'
-	option switch_time '667'
-	option switch_timeout '5'
-	option switch_try_count '3'
 	option gfwlist_url 'https://raw.sevencdn.com/YW5vbnltb3Vz/domain-list-community/release/gfwlist.txt'
 	option chnroute_url 'https://ispip.clang.cn/all_cn.txt'
 	option nfip_url 'https://raw.sevencdn.com/QiuSimons/Netflix_IP/master/NF_only.txt'
-	option adblock_url 'https://anti-ad.net/anti-ad-for-dnsmasq.conf'
 	option netflix_proxy '1'
-	option run_mode 'router'
 	option netflix_server 'nil'
-	option global_server 'cfg1e4a8f'
+	option enable_switch '0'
+	option adblock '0'
+	option global_server 'cfg1c4a8f'
+	option run_mode 'router'
 
 config server_subscribe
 	option auto_update_time '2'
@@ -28,7 +25,6 @@ config server_subscribe
 	option filter_words '香港/台湾/日本/俄罗斯/V4'
 
 config access_control
-	option lan_ac_mode '0'
 	option router_proxy '1'
 	list wan_fw_ips '149.154.160.0/20'
 	list wan_fw_ips '67.198.55.0/24'
@@ -36,6 +32,9 @@ config access_control
 	list wan_fw_ips '91.108.56.0/22'
 	list wan_fw_ips '109.239.140.0/24'
 	list Interface 'lan'
+	option lan_ac_mode 'w'
+	list lan_ac_ips '10.1.1.3'
+	list lan_ac_ips '10.1.1.10'
 
 config socks5_proxy
 	option server 'nil'
@@ -451,6 +450,7 @@ config servers
 	option alias 'V2-中转3467|上海CN2-新加坡|解锁|x2.0|V2ray'
 	option server 'uc-1.bj.ddns-only.xyz'
 	option switch_enable '0'
+	option ip '223.166.4.210'
 
 config servers
 	option type 'v2ray'
@@ -503,6 +503,7 @@ config servers
 	option alias 'V2-中转3485|广东-新加坡|解锁|x1.5|V2ray'
 	option server 'guangdong05.ddns-only.xyz'
 	option switch_enable '0'
+	option ip '120.232.215.198'
 
 config servers
 	option type 'v2ray'
@@ -1251,6 +1252,7 @@ config servers
 	option alias '[速鹰666] V3-中转3370|广港-新加坡|x1.5'
 	option server 'linode-zy.ddns-only.xyz'
 	option switch_enable '0'
+	option ip '120.232.43.166'
 
 config servers
 	option type 'ssr'
